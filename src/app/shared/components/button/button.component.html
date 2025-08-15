@@ -1,0 +1,30 @@
+<button 
+class="button"
+(click)="onClick()"
+[class]="[
+  'button',
+  `button--${type()}`,
+  disabled() ? 'button--disable':''
+]"
+[disabled]="disabled() || loading()"
+>
+  <div class="button__content">
+  @if(!loading()){
+    <div 
+    class="button__content__text"
+    [class]="[
+      'button__content__text',
+      `button__content__text--${size()}`
+    ]"
+    >
+        <ng-content ></ng-content>
+    </div> 
+  }@else {
+    <div class="button__content__loader-container">
+        <div class="button__content__loader-container__gear">
+            <img src="https://assets.codepen.io/6093409/gear.svg.png" alt="an illustration of a gear" />
+        </div>
+    </div>
+  }
+  </div>
+</button>

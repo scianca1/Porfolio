@@ -1,0 +1,76 @@
+@use "@styles/colors/darks.scss" as *;
+@use "@styles/sizes.scss" as *;
+.button{
+    color: $btn-primary-text;
+    background: $btn-primary-background;
+    border-radius: 30px;
+    padding: 30px;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    box-shadow: $btn-primary-box-shadow;
+    transition: box-shadow 0.3s ease, background 0.3s ease,transform 0.3s ease;
+
+
+    &:not(.button--tertiary):hover {
+      box-shadow:  $btn-primary-box-shadow-hover;
+      transform: translateY(-2px);
+    }
+    
+
+    
+    &--secundary{
+      background: none;
+      background-color: transparent;
+      color:$btn-secondary-text;
+      border: solid 2px $btn-secondary-text;
+     /** este hover SÍ aplica correctamente */
+    //  &:hover {
+    //   background-color: $blanco;
+    //   box-shadow: none;
+    // }
+    }
+    &--disable{
+      cursor: not-allowed;
+      opacity: 0.3;
+      box-shadow: none;
+      &:hover {
+        box-shadow: none;
+        // background: $primary-gradiente-boton;
+      }
+    }
+    &__content{
+        &__text{
+             font-size: $btn-text;
+             font-family: 'roboto', sans-serif;
+             display: flex;
+             align-items: center;
+            &--small{
+               font-size: 15px;
+            }
+            &--medium{
+              font-size: 24px;
+            }
+            &--large{
+              font-size: 30px;
+            }
+        }
+        // &__loader-container{
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   margin: 0 30px;
+        //   &__gear{
+        //     width: 35px;
+        //     height: 35px;
+        //     animation: rotate 4s linear infinite;
+        //     img{
+        //       width: 35px;
+        //       height: 35px;
+        //       filter: invert(1) brightness(2);
+        //     }
+        //   }
+        // }
+    }
+   
+}

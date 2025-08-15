@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@styles/colors/darks.scss" as *;
+
+body,html{
+    background-color: #010606; /* fondo oscuro */
+    background-image: $backgrounts-img;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+}
+.content-web{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('/assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
+       url('/assets/fonts/BebasNeue-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto-Medium.woff2') format('woff2'),
+       url('/assets/fonts/Roboto-Medium.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+.logo{
+    background: $primary-color;
+    -webkit-background-clip: text; /* recorta el fondo al texto */
+    -webkit-text-fill-color: transparent; /* hace que solo se vea el gradiente */
+    background-clip: text; /* para compatibilidad en navegadores nuevos */
+    font-family: 'Bebas Neue', sans-serif;
+}

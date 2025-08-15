@@ -1,0 +1,22 @@
+// backgrounts
+$backgrounts-img: url(https://res.cloudinary.com/dtszuh3ma/image/upload/v1755291265/green-dust-and-scratches_qayo9i.png);
+
+//colors lineares
+$primary-color: linear-gradient( 
+    90deg,
+    #00CCC5 0%,
+    #04726F 100%
+);
+
+//buttons
+    //primary
+    $btn-primary-text:#000000;
+    $btn-primary-background: $primary-color;
+    $btn-primary-box-shadow:1px 3px 5px #9d9d9d47;
+    $btn-primary-box-shadow-hover:1px 3px 20px #9d9d9d47;
+
+    //secondary
+    $btn-secondary-text: $primary-color;
+    $btn-secondary-background: transparent;
+
+    

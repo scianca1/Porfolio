@@ -17,6 +17,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "stylePreprocessorOptions": {
+                "includePaths": [
+                  "src",
+                  "public/assets/styles"
+                ]
+              },
             "outputPath": "dist/porfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -28,7 +34,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
               }
             ],
             "styles": [
