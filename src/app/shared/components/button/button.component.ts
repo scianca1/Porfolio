@@ -10,7 +10,7 @@ export class ButtonComponent {
   clicked= output<void>();
   loading= input<boolean>(false);
   disabled= input<boolean>(false);
-  type= input<'secundary'|''>('');
+  type= input<'secundary'|'tertiary'|''>('');
   size= input<'small'|'medium'|'large'>('medium');
   onClick() {
     if(!this.loading() && !this.disabled()){

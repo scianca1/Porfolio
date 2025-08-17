@@ -14,7 +14,9 @@ class="button"
     class="button__content__text"
     [class]="[
       'button__content__text',
-      `button__content__text--${size()}`
+      `button__content__text--${size()}`,
+      type() === 'secundary' ? 'leter-gradiente' : '',
+      type() === 'secundary' ? 'button__content__text--secondary' : '',
     ]"
     >
         <ng-content ></ng-content>

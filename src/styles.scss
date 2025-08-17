@@ -33,8 +33,13 @@ body,html{
 
 .logo{
     background: $primary-color;
-    -webkit-background-clip: text; /* recorta el fondo al texto */
-    -webkit-text-fill-color: transparent; /* hace que solo se vea el gradiente */
-    background-clip: text; /* para compatibilidad en navegadores nuevos */
     font-family: 'Bebas Neue', sans-serif;
+}
+
+.leter-gradiente{
+  display: inline-block;
+  background: linear-gradient(90deg, #00CCC5 0%, #04726F 100%);
+  -webkit-background-clip: text; /* recorta el fondo al texto */
+  -webkit-text-fill-color: transparent; /* hace que solo se vea el gradiente */
+  background-clip: text; /* para compatibilidad en navegadores nuevos */
 }

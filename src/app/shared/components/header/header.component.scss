@@ -1,5 +1,5 @@
 .header{
-    background-color: red;
+    // background-color: red;
     position: fixed;
     width: 100%;
     display: flex;
@@ -10,6 +10,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__logo{
         font-size: 48px;

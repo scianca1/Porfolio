@@ -20,10 +20,16 @@
 
     
     &--secundary{
-      background: none;
-      background-color: transparent;
-      color:$btn-secondary-text;
-      border: solid 2px $btn-secondary-text;
+      background:  none;
+      // background-color: transparent;
+      // color:white;
+      border: solid 2px $btn-secondary-border;
+      border-radius: 30px;
+
+       // truco para borde degradado redondeado
+      // background-image: linear-gradient(#000, #000), $btn-secondary-text;
+      // background-origin: border-box;
+      // background-clip: padding-box, border-box;
      /** este hover SÍ aplica correctamente */
     //  &:hover {
     //   background-color: $blanco;
@@ -43,8 +49,8 @@
         &__text{
              font-size: $btn-text;
              font-family: 'roboto', sans-serif;
-             display: flex;
-             align-items: center;
+            //  display: flex;
+            //  align-items: center;
             &--small{
                font-size: 15px;
             }
@@ -53,6 +59,9 @@
             }
             &--large{
               font-size: 30px;
+            }
+            &--secondary{
+              color: transparent;
             }
         }
         // &__loader-container{

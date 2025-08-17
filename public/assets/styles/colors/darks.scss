@@ -5,8 +5,9 @@ $backgrounts-img: url(https://res.cloudinary.com/dtszuh3ma/image/upload/v1755291
 $primary-color: linear-gradient( 
     90deg,
     #00CCC5 0%,
-    #04726F 100%
+    #04726F 100%,
 );
+
 
 //buttons
     //primary
@@ -18,5 +19,6 @@ $primary-color: linear-gradient(
     //secondary
     $btn-secondary-text: $primary-color;
     $btn-secondary-background: transparent;
+    $btn-secondary-border:#00CCC5
 
     
