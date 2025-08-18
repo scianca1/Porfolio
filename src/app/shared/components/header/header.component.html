@@ -1,11 +1,20 @@
 <header class="header">
     <div class="content-web header__content">
         <span class="header__logo logo leter-gradiente">MS</span>
-        <div class="header__nav">
-            <ul class="header__list">
-                <app-button [type]="'secundary'">BOTON PRUEBA</app-button>
+        <nav class="header__nav" [class.header__nav--movile]="menuIsActive">
+            <div class="header__menu-btn" id="menu-btn" [class.active]="menuIsActive" (click)="toggleMenu()">
+                <div class="header__menu-btn__bar"></div>
+                <div class="header__menu-btn__bar"></div>
+                <div class="header__menu-btn__bar"></div>
+            </div>
+            <ul class="header__list" [class.header__list--active]="menuIsActive">
+                <li class="header__list__item"><app-button [type]="'tertiary'" [size]="'small'">Inicio</app-button></li>
+                <li class="header__list__item"><app-button [type]="'tertiary'" [size]="'small'">Proyectos</app-button></li>
+                <li class="header__list__item"><app-button [type]="'tertiary'" [size]="'small'">Contacto</app-button></li>
+                <li class="header__list__item"><app-button [type]="'tertiary'" [size]="'small'">Educacion</app-button></li>
+                <li class="header__list__item"><app-button [type]="'tertiary'" [size]="'small'">Sobre mi</app-button></li>
+                <app-button [type]="'secundary'" [size]="'small'">Descargar CV <img src="assets/icons/download-icon.svg" alt="download"></app-button>
             </ul>
-
-        </div>
+        </nav>
     </div>
 </header>

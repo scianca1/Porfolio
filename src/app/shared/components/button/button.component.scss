@@ -17,7 +17,7 @@
       transform: translateY(-2px);
     }
     
-
+    
     
     &--secundary{
       background:  none;
@@ -36,6 +36,16 @@
     //   box-shadow: none;
     // }
     }
+    &--tertiary{
+      background: none;
+      color: $white-dark;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     &--disable{
       cursor: not-allowed;
       opacity: 0.3;
@@ -49,8 +59,8 @@
         &__text{
              font-size: $btn-text;
              font-family: 'roboto', sans-serif;
-            //  display: flex;
-            //  align-items: center;
+             display: flex;
+             align-items: center;
             &--small{
                font-size: 15px;
             }
