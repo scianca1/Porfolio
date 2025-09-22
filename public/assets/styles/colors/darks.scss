@@ -28,6 +28,10 @@ $white-dark:#cacaca;
     //secondary
     $btn-secondary-text: $primary-color;
     $btn-secondary-background: transparent;
-    $btn-secondary-border:#00CCC5
+    $btn-secondary-border:#00CCC5;
 
+    //box shadows
+    $box-shadow-1: 0px 4px 20px #000000;
+    $box-shadow-primary-button-hover:-4px 6px 12px rgba(170, 170, 170, 0.6), 
+                                    4px 6px 12px rgba(170, 170, 170, 0.6);
     

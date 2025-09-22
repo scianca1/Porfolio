@@ -1,0 +1,42 @@
+@use "@styles/colors/darks.scss" as *;
+.inicio-section{ 
+    margin-top: 5%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__info{
+        &__title{
+            font-family: 'Bebas Neue', sans-serif;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            &--resaltado{
+                font-size: 96px;
+                @media(max-width: 768px) {
+                    font-size: 50px;
+                }
+            }
+            &__text-social{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+        &__bottons{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+    }
+    &__portada{
+        position: relative;
+        @media(max-width: 768px) {
+            display: none;
+        }
+        &__myImg{
+            position: absolute;
+            left: 25%;
+        }
+    }
+}
